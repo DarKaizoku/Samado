@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Samado/static/css/main.b1b50f80.css",
-    "main.js": "/Samado/static/js/main.a1d2fe7e.js",
-    "static/js/453.91fbc6e7.chunk.js": "/Samado/static/js/453.91fbc6e7.chunk.js",
-    "index.html": "/Samado/index.html",
-    "main.b1b50f80.css.map": "/Samado/static/css/main.b1b50f80.css.map",
-    "main.a1d2fe7e.js.map": "/Samado/static/js/main.a1d2fe7e.js.map",
-    "453.91fbc6e7.chunk.js.map": "/Samado/static/js/453.91fbc6e7.chunk.js.map"
+    "main.css": "/Samado/index.html/static/css/main.b1b50f80.css",
+    "main.js": "/Samado/index.html/static/js/main.317b51ed.js",
+    "static/js/453.91fbc6e7.chunk.js": "/Samado/index.html/static/js/453.91fbc6e7.chunk.js",
+    "index.html": "/Samado/index.html/index.html",
+    "main.b1b50f80.css.map": "/Samado/index.html/static/css/main.b1b50f80.css.map",
+    "main.317b51ed.js.map": "/Samado/index.html/static/js/main.317b51ed.js.map",
+    "453.91fbc6e7.chunk.js.map": "/Samado/index.html/static/js/453.91fbc6e7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1b50f80.css",
-    "static/js/main.a1d2fe7e.js"
+    "static/js/main.317b51ed.js"
   ]
 }
