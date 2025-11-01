@@ -1,14 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
+import { Navbar, Nav, Container, Row, Col,Image } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" sticky='top'>
         <Container>
-          <Navbar.Brand href="#home">Mon Site</Navbar.Brand>
+          <Navbar.Brand href="#home">SAMADO Services</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -23,12 +23,7 @@ function App() {
 
       <section id="home">
         <Container>
-          <Row>
-            <Col>
-              <h1>Bienvenue sur mon site</h1>
-              <p>Ceci est la section d'accueil.</p>
-            </Col>
-          </Row>
+          <Image src="./images/card_SAMADO.jpeg" thumbnail />
         </Container>
       </section>
       <section id="services">

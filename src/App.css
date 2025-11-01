@@ -32,7 +32,89 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* App.css */
+
+/* Navbar */
+.navbar {
+  background-color: #343a40 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffc107 !important;
+}
+
+.navbar-light .navbar-brand {
+  color: #ffc107 !important;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+  /*min-height: 100vh;*/
+  color: #ffc107 !important;
+}
+
+#home {
+  background-color: #1976d2;
+  min-height: none;
+}
+
+#about {
+  background-color: #0d47a1;
+}
+
+#services {
+  background-color: #0b3d91;
+}
+
+#contact {
+  background-color: #07306b;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #ffc107 !important;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Containers and text */
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h1,
+p {
+  color: #ffc107 !important;
+}
+
+/* Boutons et liens */
+.btn-primary {
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+  color: #1976d2 !important;
+}
+
+.btn-primary:hover {
+  background-color: #ffca28 !important;
+  border-color: #ffca28 !important;
+  color: #1976d2 !important;
+}
+
+a {
+  color: #ffc107 !important;
+}
+
+a:hover {
+  color: #ffeb3b !important;
 }
