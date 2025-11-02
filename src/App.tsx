@@ -1,7 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Navbar, Nav, Container, Row, Col,Image } from 'react-bootstrap';
+import { Navbar, Nav, Container, Row, Col, Image } from 'react-bootstrap';
+import CarouselVehicules from './Components/carouselVehicule';
+//import CarouselVehiculesV2 from './Components/carouselServiceV2';
 
 function App() {
   return (
@@ -23,15 +25,15 @@ function App() {
 
       <section id="home">
         <Container>
-          <Image src="./images/card_SAMADO.jpeg" thumbnail />
+          <Image src={process.env.PUBLIC_URL + '/images/card_SAMADO.jpeg'} alt='Présentation Samado Services' thumbnail />
         </Container>
       </section>
-      <section id="services">
+      <section id="vehicules">
         <Container>
           <Row>
             <Col>
-              <h1>Services</h1>
-              <p>Ceci est la section Services.</p>
+              <h1>Nos véhicules</h1>
+              <CarouselVehicules />
             </Col>
           </Row>
         </Container>

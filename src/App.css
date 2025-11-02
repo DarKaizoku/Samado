@@ -70,7 +70,7 @@ section {
   background-color: #0d47a1;
 }
 
-#services {
+#vehicules {
   background-color: #0b3d91;
 }
 
@@ -117,4 +117,17 @@ a {
 
 a:hover {
   color: #ffeb3b !important;
+}
+
+/* Carousel Véhicules */
+
+.carousel img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  /* garde les proportions et coupe l’excédent */
+  object-position: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
