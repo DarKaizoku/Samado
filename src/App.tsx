@@ -2,8 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Navbar, Nav, Container, Row, Col, Image } from 'react-bootstrap';
-import CarouselVehicules from './Components/carouselVehicule';
-//import CarouselVehiculesV2 from './Components/carouselServiceV2';
+//import CarouselVehicules from './Components/carouselVehicule';
+import CarouselVehiculesV2 from './Components/carouselServiceV2';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#home">Accueil</Nav.Link>
-              <Nav.Link href="#services">Services</Nav.Link>
+              <Nav.Link href="#vehicules">Nos véhicules</Nav.Link>
               <Nav.Link href="#about">À Propos</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
@@ -33,7 +33,7 @@ function App() {
           <Row>
             <Col>
               <h1>Nos véhicules</h1>
-              <CarouselVehicules />
+              <CarouselVehiculesV2 />
             </Col>
           </Row>
         </Container>

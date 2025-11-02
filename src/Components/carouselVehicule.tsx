@@ -4,7 +4,6 @@ export default function CarouselVehicules() {
     return (
         <Carousel >
             <Carousel.Item>
-
                 <img
                     className="img-fluid"
                     src={process.env.PUBLIC_URL + "/images/PolkaPolka_SAMADO.jpeg"}
