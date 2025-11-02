@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Samado/static/css/main.587e0f20.css",
-    "main.js": "/Samado/static/js/main.7816da62.js",
+    "main.css": "/Samado/static/css/main.deb3f76b.css",
+    "main.js": "/Samado/static/js/main.99ee5911.js",
     "static/js/453.91fbc6e7.chunk.js": "/Samado/static/js/453.91fbc6e7.chunk.js",
     "index.html": "/Samado/index.html",
-    "main.587e0f20.css.map": "/Samado/static/css/main.587e0f20.css.map",
-    "main.7816da62.js.map": "/Samado/static/js/main.7816da62.js.map",
+    "main.deb3f76b.css.map": "/Samado/static/css/main.deb3f76b.css.map",
+    "main.99ee5911.js.map": "/Samado/static/js/main.99ee5911.js.map",
     "453.91fbc6e7.chunk.js.map": "/Samado/static/js/453.91fbc6e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.587e0f20.css",
-    "static/js/main.7816da62.js"
+    "static/css/main.deb3f76b.css",
+    "static/js/main.99ee5911.js"
   ]
 }
