@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Navbar bg="light" expand="lg" sticky='top'>
         <Container>
-          <Navbar.Brand href="#home">SAMADO Services</Navbar.Brand>
+          <Navbar.Brand href="#home"><span className="icon-wrapper" id='S_blue'>.</span>AMADO <span className="icon-wrapper" id='S_white'>.</span>ervices</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">

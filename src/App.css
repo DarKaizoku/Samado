@@ -130,3 +130,45 @@ a:hover {
   border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Ajustement du S de SAMADO */
+
+.brand-with-icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 1.5em;
+  /* Ajustez selon la taille de votre icône */
+  height: 1.5em;
+  /* Ajustez selon la taille de votre icône */
+}
+
+.icon-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('/public/images/S_to_SAMADO_blue.png'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-wrapper>span {
+  visibility: hidden;
+  /* Cache le texte "S" */
+}
+
+#S_blue::before {
+  background-image: url('/public/images/S_to_SAMADO_blue.png');
+}
+
+#S_white::before {
+  background-image: url('/public/images/S_to_SAMADO_white.png');
+}
