@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Samado/static/css/main.20f7b143.css",
-    "main.js": "/Samado/static/js/main.f850e86b.js",
+    "main.css": "/Samado/static/css/main.739ed47a.css",
+    "main.js": "/Samado/static/js/main.1af55347.js",
     "static/js/453.91fbc6e7.chunk.js": "/Samado/static/js/453.91fbc6e7.chunk.js",
     "static/media/whatsapp.png": "/Samado/static/media/whatsapp.965d92ce0d9f486938b6.png",
     "static/media/poster.png": "/Samado/static/media/poster.c7ea2bfd97ac002d55a8.png",
     "index.html": "/Samado/index.html",
-    "main.20f7b143.css.map": "/Samado/static/css/main.20f7b143.css.map",
-    "main.f850e86b.js.map": "/Samado/static/js/main.f850e86b.js.map",
+    "main.739ed47a.css.map": "/Samado/static/css/main.739ed47a.css.map",
+    "main.1af55347.js.map": "/Samado/static/js/main.1af55347.js.map",
     "453.91fbc6e7.chunk.js.map": "/Samado/static/js/453.91fbc6e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20f7b143.css",
-    "static/js/main.f850e86b.js"
+    "static/css/main.739ed47a.css",
+    "static/js/main.1af55347.js"
   ]
 }
