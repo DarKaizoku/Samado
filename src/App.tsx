@@ -56,24 +56,21 @@ function App() {
       </section>
 
       <section id="contact">
-        <Container>
-          <Row>
-            <Col>
-              <h1>Contact</h1>
-              <p>Ceci est la section Contact.</p>
-            </Col>
-          </Row>
+        <Container id='container-contact'>
+          <h1>Contact</h1>
+          <span>
+            <p id='contact-left'>
+              <p id='contact-samado-title'><span className="icon-wrapper" id='S_blue'>.</span>AMADO <span className="icon-wrapper" id='S_white'>.</span>ervices</p>
+              <p><span className="icon-wrapper" id='whatsappLogo'>.</span> 438 833-9086</p>
+              <p><span className="icon-wrapper" id='emailLogo'>.</span> <a href="mailto:samado.services@gmail.com">samado.services@gmail.com</a></p>
+            </p>
+            <p id='contact-right'>  </p>
+          </span>
         </Container>
       </section>
 
       <footer>
-        <Container>
-          <Row>
-            <Col>
-              <p id='p-footer'>&copy; 2025 Samado Services & Co. Tous droits réservés.</p>
-            </Col>
-          </Row>
-        </Container>
+        <p id='p-footer'>&copy; 2025 Samado Services & Co. Tous droits réservés.</p>
       </footer>
     </div>
   );
