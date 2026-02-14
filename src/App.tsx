@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Navbar, Nav, Container, Row, Col, Image } from 'react-bootstrap';
 //import CarouselVehicules from './Components/carouselVehicule';
 import CarouselVehiculesV2 from './Components/carouselVehiculeV2';
 import CarouselForfaits from './Components/carouselForfaits';
+import { PageContext } from './contexts/page.context';
+
 
 function App() {
+
+  const { page } = useContext(PageContext);
+
   return (
     <div className="App">
       <Navbar bg="light" expand="lg" sticky='top'>
@@ -16,10 +21,9 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#home">Accueil</Nav.Link>
-              <Nav.Link href="#forfaits">Nos Forfaits<br /> bob</Nav.Link>
+              <Nav.Link href="#forfaits">Nos Forfaits</Nav.Link>
               <Nav.Link href="#vehicules">Nos véhicules</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
-              <Nav.Link href="#about">À Propos</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -62,22 +66,11 @@ function App() {
         </Container>
       </section>
 
-      <section id="about">
-        <Container>
-          <Row>
-            <Col>
-              <h1>À Propos</h1>
-              <p>Ceci est la section À Propos.</p>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-
       <footer>
         <Container>
           <Row>
             <Col>
-              <p>&copy; 2025 Samado & Co. Tous droits réservés.</p>
+              <p id='p-footer'>&copy; 2025 Samado Services & Co. Tous droits réservés.</p>
             </Col>
           </Row>
         </Container>

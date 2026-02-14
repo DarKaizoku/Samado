@@ -56,9 +56,19 @@
 
 /* Sections */
 section {
+  scroll-margin-top: 80px;
+  /* Ajuste la valeur à la hauteur de ton header */
   padding: 60px 0;
   /*min-height: 100vh;*/
   color: #ffc107 !important;
+}
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 56px;
+    /* hauteur typique d'un header mobile Bootstrap */
+    padding: 30px 0;
+  }
 }
 
 #home {
@@ -87,6 +97,10 @@ footer {
   background-color: #343a40;
   color: #ffc107 !important;
   text-align: center;
+}
+
+#p-footer {
+  margin: 0;
 }
 
 /* Containers and text */
@@ -123,20 +137,47 @@ a:hover {
 }
 
 /* Carousel Forfaits */
-.carousel-item #forfait {
-  display: flex;
-  justify-content: center;
+
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.span-price {
+  justify-self: end;
+  color: #ffc107 !important;
 }
 
 .card-text {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  color: #ffc107 !important;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .card-text {
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+
+  .span-parameter {
+    text-align: center !important;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  #forfait .card {
+    width: 100% !important;
+  }
 }
 
 .span-parameter {
   text-align: left;
+  color: #ffc107 !important;
 }
 
 #forfait .card {
@@ -198,4 +239,89 @@ a:hover {
 
 #S_white::before {
   background-image: url('/public/images/S_to_SAMADO_white.png');
+}
+
+/* Responsive sections */
+section {
+  scroll-margin-top: 80px;
+  padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 56px;
+    padding: 30px 0;
+  }
+}
+
+/* Responsive containers */
+.container {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Responsive headings and text */
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive grid for card-text */
+.card-text {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .card-text {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive images */
+img,
+.Image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive footer */
+footer {
+  font-size: 1rem;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+}
+
+/* Responsive navbar brand */
+.navbar-brand {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
 }

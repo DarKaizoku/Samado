@@ -1,6 +1,5 @@
 import { Button, Carousel } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { listForfaits } from "../constants/listForfaits";
@@ -13,10 +12,10 @@ export default function CarouselForfaits() {
             {listForfaits.map(forfait => (
                 <Carousel.Item key={forfait.id}>
                     <Card style={{ width: '33rem', margin: '0 auto' }}>
-                        <Card.Header>{forfait.icone}   {forfait.name}</Card.Header>
+                        <Card.Header>{forfait.icone}   {forfait.name} <span className="span-price">{forfait.prix} $</span></Card.Header>
                         {/* <Card.Img variant="top" src="holder.js/100px180?text=Image cap" /> */}
                         <Card.Body>
-                            <Card.Title>{forfait.prix} $</Card.Title>
+                            <Card.Title></Card.Title>
                             <Card.Text>
                                 <span className="fw-bold span-parameter">🏠/🏢 Type d'habitation:</span> {forfait.typeHabitation.join(', ')}
                             </Card.Text>
@@ -60,7 +59,7 @@ export default function CarouselForfaits() {
                             </ListGroup> */}
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary">Demander</Button>
+                            <Button variant="primary" >Déménager</Button>
                         </Card.Footer>
                     </Card>
                 </Carousel.Item>
