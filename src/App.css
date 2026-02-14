@@ -140,7 +140,7 @@ a:hover {
 
 .card-header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   background-color: transparent;
   font-size: 1.5rem;
   font-weight: bold;
