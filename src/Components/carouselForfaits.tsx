@@ -8,7 +8,7 @@ import { listForfaits } from "../constants/listForfaits";
 
 export default function CarouselForfaits() {
     return (
-        <Carousel id="forfait" data-bs-theme="dark" indicators={false} interval={null}>
+        <Carousel id="forfait" data-bs-theme="dark" indicators={false} interval={null} touch={true} className="carousel-forfaits">
             {listForfaits.map(forfait => (
                 <Carousel.Item key={forfait.id}>
                     <Card style={{ width: '33rem', margin: '0 auto' }}>
