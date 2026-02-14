@@ -124,11 +124,17 @@ footer {
 #contact-samado-title {
   color: #ffc107 !important;
   font-size: larger;
+  padding-left: 0 !important;
+  text-decoration: underline;
 }
 
 #contact-left {
   text-align: left;
   padding-left: 33%;
+}
+
+#contact-left p {
+  padding-left: 25px;
 }
 
 /* Containers and text */
@@ -147,7 +153,8 @@ p {
 .btn-primary {
   background-color: #ffc107 !important;
   border-color: #ffc107 !important;
-  color: #1976d2 !important;
+  color: #07306b !important;
+  font-weight: 600;
 }
 
 .btn-primary:hover {
@@ -241,6 +248,7 @@ a:hover {
   /* Ajustez selon la taille de votre icône */
   height: 1.5em;
   /* Ajustez selon la taille de votre icône */
+  color: transparent;
 }
 
 .icon-wrapper::before {
@@ -254,11 +262,6 @@ a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.icon-wrapper>span {
-  visibility: hidden;
-  /* Cache le texte "S" */
 }
 
 #S_blue::before {
