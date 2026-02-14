@@ -6,7 +6,7 @@ import { flotteVehicule } from "../constants/listVehicules"
 
 export default function CarouselVehiculesV2() {
     return (
-        <Carousel data-bs-theme="dark" indicators={false} interval={null}>
+        <Carousel id="vehicule" data-bs-theme="dark" indicators={false} interval={null}>
             {flotteVehicule.map(vehicule => (
                 <Carousel.Item key={vehicule.id}>
                     <h5 className="text-center mb-3">{vehicule.name}</h5>

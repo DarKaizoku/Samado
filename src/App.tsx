@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Navbar, Nav, Container, Row, Col, Image } from 'react-bootstrap';
 //import CarouselVehicules from './Components/carouselVehicule';
-import CarouselVehiculesV2 from './Components/carouselServiceV2';
+import CarouselVehiculesV2 from './Components/carouselVehiculeV2';
+import CarouselForfaits from './Components/carouselForfaits';
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#home">Accueil</Nav.Link>
+              <Nav.Link href="#forfaits">Nos Forfaits<br /> bob</Nav.Link>
               <Nav.Link href="#vehicules">Nos véhicules</Nav.Link>
-              <Nav.Link href="#about">À Propos</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="#about">À Propos</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -26,6 +28,16 @@ function App() {
       <section id="home">
         <Container>
           <Image src={process.env.PUBLIC_URL + '/images/card_SAMADO.jpeg'} alt='Présentation Samado Services' thumbnail />
+        </Container>
+      </section>
+      <section id="forfaits">
+        <Container>
+          <Row>
+            <Col>
+              <h1>Nos Forfaits</h1>
+              <CarouselForfaits />
+            </Col>
+          </Row>
         </Container>
       </section>
       <section id="vehicules">

@@ -70,6 +70,10 @@ section {
   background-color: #0d47a1;
 }
 
+#forfaits {
+  background-color: #07306b;
+}
+
 #vehicules {
   background-color: #0b3d91;
 }
@@ -83,7 +87,6 @@ footer {
   background-color: #343a40;
   color: #ffc107 !important;
   text-align: center;
-  padding: 20px 0;
 }
 
 /* Containers and text */
@@ -119,9 +122,33 @@ a:hover {
   color: #ffeb3b !important;
 }
 
+/* Carousel Forfaits */
+.carousel-item #forfait {
+  display: flex;
+  justify-content: center;
+}
+
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color: #ffc107 !important;
+}
+
+.span-parameter {
+  text-align: left;
+}
+
+#forfait .card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 /* Carousel Véhicules */
 
-.carousel img {
+#vehicule img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: contain;

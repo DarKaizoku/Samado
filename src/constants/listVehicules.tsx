@@ -11,7 +11,7 @@ export const flotteVehicule = [
         description: "Plus petit, mais tout aussi pratique.",
         images: process.env.PUBLIC_URL + "/images/van_SAMADO.jpeg",
     }, {
-        id: 2,
+        id: 3,
         name: "Tout cette place pour vous !",
         description: "Zone arrière du fourgon.",
         images: process.env.PUBLIC_URL + "/images/backTruck_SAMADO.jpeg"
