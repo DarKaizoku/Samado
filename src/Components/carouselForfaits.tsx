@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button, Carousel } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,9 +11,6 @@ export default function CarouselForfaits() {
 
     const [forfait, setForfait] = useState('');
 
-    useEffect(() => {
-        console.log(forfait);
-    }, [forfait]);
     function sendDemande(forfait: any) {
 
         const forfaitSelected = {

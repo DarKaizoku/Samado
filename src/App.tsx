@@ -14,13 +14,13 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar bg="light" expand="lg" sticky='top'>
+      <Navbar collapseOnSelect bg="light" expand="lg" sticky='top'>
         <Container>
-          <Navbar.Brand href="#home"><span className="icon-wrapper" id='S_blue'>.</span>AMADO <span className="icon-wrapper" id='S_white'>.</span>ervices</Navbar.Brand>
+          <Navbar.Brand href="#"><span className="icon-wrapper" id='S_blue'>.</span>AMADO <span className="icon-wrapper" id='S_white'>.</span>ervices</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#about">À Propos</Nav.Link>
+              <Nav.Link href="#about-section">À Propos</Nav.Link>
               <Nav.Link href="#forfaits">Nos Forfaits</Nav.Link>
               <Nav.Link href="#vehicules">Nos véhicules</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
@@ -96,12 +96,12 @@ function App() {
         <Container id='container-contact'>
           <h1>Contact</h1>
           <span>
-            <p id='contact-left'>
+            <span id='contact-left'>
               <p id='contact-samado-title'><span className="icon-wrapper" id='S_blue'>.</span>AMADO <span className="icon-wrapper" id='S_white'>.</span>ervices</p>
               <p><span className="icon-wrapper" id='whatsappLogo'>.</span> 438 833-9086</p>
               <p><span className="icon-wrapper" id='facebookLogo'>.</span> <a href="https://www.facebook.com/profile.php?id=61550963159771" target="_blank" rel="noopener noreferrer">facebook.com/SamadoServices</a></p>
               <p><span className="icon-wrapper" id='emailLogo'>.</span> <a href="mailto:samado.services@gmail.com">samado.services@gmail.com</a></p>
-            </p>
+            </span>
             <p id='contact-right'>  </p>
           </span>
         </Container>
