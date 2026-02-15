@@ -186,8 +186,29 @@ p {
 }
 
 #about ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
   padding-left: 10px;
+}
+
+#about li {
+  text-align: left;
+  grid-column: 2;
+  padding-left: 10%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  #about ul {
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  #about li {
+    grid-column: 1;
+  }
 }
 
 

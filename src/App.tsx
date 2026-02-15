@@ -33,12 +33,13 @@ function App() {
           <Row>
             <Col>
               <div id="about">
-                <h2><strong>
+                <Image src={process.env.PUBLIC_URL + '/images/card_SAMADO.jpeg'} alt='Présentation Samado Services' thumbnail /><br /><br />
+                {/* <h2><strong>
                   <span className="icon-wrapper" id='S_blue'>.</span>AMADO
                   <span className="no-break">
                     <span className="icon-wrapper" id='S_white'>.</span>ervices
                   </span>
-                </strong></h2>
+                </strong></h2> */}
                 <p>
 
                   Fondée avec la volonté d’offrir un service de déménagement fiable et professionnel dans le Grand Montréal, <span className="icon-wrapper" id='S_blue'>.</span>AMADO <span className="icon-wrapper" id='S_white'>.</span>ervices accompagne les particuliers et les entreprises dans toutes les étapes de leur relocalisation.<br /><br />
@@ -56,7 +57,7 @@ function App() {
                   <li>✔ Service résidentiel et commercial</li>
                   <li>✔ Transport sécurisé de vos biens</li>
                   <li>✔ Tarifs compétitifs et transparents</li>
-                  <li>✔ Soumission rapide et gratuite</li>
+                  <li>✔ Devis rapide et gratuite</li>
                   <li>✔ Service dans tout le Grand Montréal</li>
                 </ul>
                 <p>
