@@ -6,6 +6,7 @@ import { Navbar, Nav, Container, Row, Col, Image } from 'react-bootstrap';
 import CarouselVehiculesV2 from './Components/carouselVehiculeV2';
 import CarouselForfaits from './Components/carouselForfaits';
 //import { PageContext } from './contexts/page.context';
+import samadoCard from '@/assets/images/card_SAMADO.jpeg';
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
           <Row>
             <Col>
               <div id="about">
-                <Image src="/images/card_SAMADO.jpeg" alt='Présentation Samado Services' thumbnail /><br /><br />
+                <Image src={samadoCard} alt='Présentation Samado Services' thumbnail /><br /><br />
                 {/* <h2><strong>
                   <span className="icon-wrapper" id='S_blue'>.</span>AMADO
                   <span className="no-break">
@@ -110,7 +111,7 @@ function App() {
       </section>
       <section id="home">
         <Container>
-          <Image src="/images/card_SAMADO.jpeg" alt='Présentation Samado Services' thumbnail />
+          <Image src={samadoCard} alt='Présentation Samado Services' thumbnail />
         </Container>
       </section>
 

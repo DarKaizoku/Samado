@@ -326,21 +326,21 @@ a:hover {
 }
 
 #S_blue::before {
-  background-image: url('/images/S_to_SAMADO_blue.png');
+  background-image: url('@/assets/images/S_to_SAMADO_blue.png');
 }
 
 #S_white::before {
-  background-image: url('/images/S_to_SAMADO_white.png');
+  background-image: url('@/assets/images/S_to_SAMADO_white.png');
 }
 
 #whatsappLogo::before {
-  background-image: url('/images/whatsapp.png');
+  background-image: url('@/assets/images/whatsapp.png');
 }
 
 #emailLogo::before {
-  background-image: url('/images/e-mail.png');
+  background-image: url('@/assets/images/e-mail.png');
 }
 
 #facebookLogo::before {
-  background-image: url('/images/facebook.png');
+  background-image: url('@/assets/images/facebook.png');
 }

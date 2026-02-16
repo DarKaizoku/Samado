@@ -5,7 +5,7 @@ import { fileURLToPath, URL } from 'url'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './',  // Pour GitHub Pages ou sous-dossier
+  base: process.env.NODE_ENV === 'production' ? '/Samado/' : '/',  // Pour GitHub Pages ou sous-dossier
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

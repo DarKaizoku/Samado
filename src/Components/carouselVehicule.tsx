@@ -1,12 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
-
+import leCamion from "@/assets/images/PolkaPolka_SAMADO.jpeg"
+import leVan from "@/assets/images/van_SAMADO.jpeg"
+import backTruck from "@/assets/images/backTruck_SAMADO.jpeg"
 export default function CarouselVehicules() {
     return (
         <Carousel >
             <Carousel.Item>
                 <img
                     className="img-fluid"
-                    src="images/PolkaPolka_SAMADO.jpeg"
+                    src={leCamion}
                     alt="Camion"
                 />
                 <Carousel.Caption>
@@ -17,7 +19,7 @@ export default function CarouselVehicules() {
             <Carousel.Item>
                 <img
                     className="img-fluid"
-                    src="images/van_SAMADO.jpeg"
+                    src={leVan}
                     alt="Van"
                 />
                 <Carousel.Caption>
@@ -28,7 +30,7 @@ export default function CarouselVehicules() {
             <Carousel.Item>
                 <img
                     className="img-fluid"
-                    src="images/backTruck_SAMADO.jpeg"
+                    src={backTruck}
                     alt="Third slide"
                 />
                 <Carousel.Caption>
