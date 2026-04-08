@@ -5,7 +5,7 @@ import { fileURLToPath, URL } from 'url'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/Samado/' : '/',  // Pour GitHub Pages ou sous-dossier
+  base: '/',  // Domaine custom Hostinger → toujours servi depuis la racine
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

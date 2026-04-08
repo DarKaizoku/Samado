@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { listForfaits } from "../constants/listForfaits";
 
-const defaultEmailContent = `Bonjour, \nNous avons besoin de vos services, quelles sont les informations nécessaires pour un devis complet ? \n\nMerci`;
+const defaultEmailContent = `Bonjour, \nNous avons besoin de vos services pour le transport des objets suivants :\n-  \n\nMerci`;
 
 export default function CarouselForfaits() {
 
@@ -39,7 +39,7 @@ export default function CarouselForfaits() {
         const params = {
             name: "",
             email: "",
-            message: defaultEmailContent + "\n\n" + `Détails du forfait sélectionné:\n${forfaitString ?? 'Aucun forfait sélectionné'}`,
+            message: defaultEmailContent + "\n\n" + `Détails du forfait sélectionné:\n${forfaitSelected.forfait ?? 'Aucun forfait sélectionné'}`,
         };
 
         window.open(`https://samado-services.getform.com/rmx77?${new URLSearchParams(params).toString()}`, "_blank", "popup,left=100,top=100,width=640,height=960");
@@ -47,7 +47,7 @@ export default function CarouselForfaits() {
 
 
     return (
-        <Carousel id="forfait" data-bs-theme="dark" indicators={false} interval={null} touch={true} className="carousel-forfaits">
+        <Carousel id="forfait" data-bs-theme="dark" indicators={false} interval={null} touch={true} variant="white" className="carousel-forfaits">
             {listForfaits.map(forfait => (
                 <Carousel.Item key={forfait.id}>
                     <Card style={{ width: '33rem', margin: '0 auto' }}>
@@ -88,7 +88,7 @@ export default function CarouselForfaits() {
 
                         </Card.Body>
                         <Card.Footer>
-                            <Button variant="primary" onClick={() => sendDemande(forfait)}>Déménager</Button>
+                            <Button variant="primary" onClick={() => sendDemande(forfait)}>Demander votre devis personnalisé</Button>
                         </Card.Footer>
                     </Card>
                 </Carousel.Item>
