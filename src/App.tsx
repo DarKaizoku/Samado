@@ -1,18 +1,23 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Navbar, Nav, Container, Row, Col, Image } from 'react-bootstrap';
+import { Navbar, Nav, Container, Row, Col, Image, Modal, Button } from 'react-bootstrap';
 //import CarouselVehicules from './Components/carouselVehicule';
 import CarouselVehiculesV2 from './Components/carouselVehiculeV2';
 import CarouselForfaits from './Components/carouselForfaits';
 //import { PageContext } from './contexts/page.context';
 import samadoCard from '@/assets/images/card_SAMADO.jpeg';
+import FormDevis from './Components/form-devis';
+import mainCard from '@/assets/images/Affiche-SAMADO.png';
+
 
 
 function App() {
 
   //const { page } = useContext(PageContext);
   const [expanded, setExpanded] = useState(false);
+  const [show, setShow] = useState(false);
+
 
   return (
     <div className="App">
@@ -26,17 +31,24 @@ function App() {
               <Nav.Link href="#about-section" onClick={() => setExpanded(false)}>À Propos</Nav.Link>
               <Nav.Link href="#forfaits" onClick={() => setExpanded(false)}>Nos Forfaits</Nav.Link>
               <Nav.Link href="#vehicules" onClick={() => setExpanded(false)}>Nos véhicules</Nav.Link>
+              <Nav.Link href="#devis" onClick={() => setShow(true)}>Devis personnalisé</Nav.Link>
               <Nav.Link href="#contact" onClick={() => setExpanded(false)}>Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Modal show={show} fullscreen={true} onHide={() => setShow(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>SAMADO SERVICES - Devis personnalisé</Modal.Title>
+        </Modal.Header>
+        <Modal.Body><FormDevis /></Modal.Body>
+      </Modal>
       <section id="about-section">
         <Container>
           <Row>
             <Col>
               <div id="about">
-                <Image src={samadoCard} alt='Présentation Samado Services' thumbnail /><br /><br />
+                <Image src={mainCard} alt='Présentation Samado Services' thumbnail /><br /><br />
                 {/* <h2><strong>
                   <span className="icon-wrapper" id='S_blue'>.</span>AMADO
                   <span className="no-break">
@@ -82,6 +94,8 @@ function App() {
               <CarouselForfaits />
             </Col>
           </Row>
+          < br />
+          <Button className='mb-3' variant="primary" onClick={() => { setShow(true); }}>Demander votre devis personnalisé</Button>
         </Container>
       </section>
       <section id="vehicules">
