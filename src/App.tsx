@@ -18,7 +18,6 @@ function App() {
   const [expanded, setExpanded] = useState(false);
   const [show, setShow] = useState(false);
 
-
   return (
     <div className="App">
       <Navbar bg="light" expand="lg" sticky='top' expanded={expanded}
@@ -41,7 +40,7 @@ function App() {
         <Modal.Header closeButton>
           <Modal.Title>SAMADO SERVICES - Devis personnalisé</Modal.Title>
         </Modal.Header>
-        <Modal.Body><FormDevis /></Modal.Body>
+        <Modal.Body><FormDevis setShow={setShow} /></Modal.Body>
       </Modal>
       <section id="about-section">
         <Container>
@@ -115,7 +114,7 @@ function App() {
           <span>
             <span id='contact-left'>
               <p id='contact-samado-title'><span className="icon-wrapper" id='S_blue'>.</span>AMADO <span className="icon-wrapper" id='S_white'>.</span>ervices</p>
-              <p><span className="icon-wrapper" id='whatsappLogo'>.</span> 438 833-9086</p>
+              <p><span className="icon-wrapper" id='whatsappLogo'>.</span> <a href="https://wa.me/14388339086" target="_blank" rel="noopener noreferrer">438 833-9086</a></p>
               <p><span className="icon-wrapper" id='facebookLogo'>.</span> <a href="https://www.facebook.com/profile.php?id=61550963159771" target="_blank" rel="noopener noreferrer">facebook.com/SamadoServices</a></p>
               <p><span className="icon-wrapper" id='emailLogo'>.</span> <a href="mailto:samado.services@gmail.com">samado.services@gmail.com</a></p>
             </span>

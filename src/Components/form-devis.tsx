@@ -14,6 +14,8 @@ const LOCAL_KEY = "samado_devis_saved";
 // Tous les types d'habitation uniques, agrégés depuis listForfaits
 const allTypesHabitation = [...new Set(listForfaits.flatMap(f => f.typeHabitation))];
 
+const listObjetsFiltred = listObjets.filter(o => o.id !== 6 && o.id !== 8); // Filtrer les animaux vivants et les produits dangereux, qui ne sont pas acceptés dans les forfaits standards
+
 const schema = Yup.object({
     prenom: Yup.string().required("Prénom requis"),
     nom: Yup.string().required("Nom requis"),
@@ -63,7 +65,7 @@ const initialValues: FormValues = {
     message: "",
 };
 
-export default function FormDevis({ forfaitInitialId }: { forfaitInitialId?: number }) {
+export default function FormDevis({ forfaitInitialId, setShow }: { forfaitInitialId?: number; setShow: (show: boolean) => void }) {
 
     const [values, setValues] = useState<FormValues>(() => {
         // Auto-restore depuis sessionStorage (safe : session uniquement)
@@ -126,7 +128,9 @@ export default function FormDevis({ forfaitInitialId }: { forfaitInitialId?: num
         setValues({ ...initialValues, forfaitId: forfaitInitialId ?? "", objets: [], ascenseurDepart: false, ascenseurArrivee: false });
         setErrors({});
         sessionStorage.removeItem(SESSION_KEY);
+        setShow(false);
     }
+
     function handleMultiCheck(field: "objets" | "prestations", value: string, checked: boolean) {
         setValues(prev => ({
             ...prev,
@@ -185,6 +189,8 @@ export default function FormDevis({ forfaitInitialId }: { forfaitInitialId?: num
             "popup,left=100,top=100,width=640,height=960"
         );
         setSubmitted(true);
+        setTimeout(() => handleCancel(), 2000);
+        setShow(false);
     }
 
 
@@ -315,7 +321,7 @@ export default function FormDevis({ forfaitInitialId }: { forfaitInitialId?: num
                     ⚠️ Tout objet non déclaré peut entraîner un <strong>supplément tarifaire</strong> et une <strong>augmentation de la durée du service</strong>.
                 </Alert>
                 <Row className="mb-3">
-                    {listObjets.map(objet => (
+                    {listObjetsFiltred.map(objet => (
                         <Col xs={12} sm={6} key={objet.id}>
                             <Form.Check
                                 type="checkbox"
